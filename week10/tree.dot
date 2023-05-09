@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="petal width (cm) <= 0.8\ngini = 0.66\nsamples = 77\nvalue = [41, 43, 36]\nclass = versicolor", fillcolor="#fafefc"] ;
+1 [label="gini = 0.0\nsamples = 28\nvalue = [41, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.75\ngini = 0.5\nsamples = 49\nvalue = [0, 43, 36]\nclass = versicolor", fillcolor="#dffbea"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="sepal length (cm) <= 7.1\ngini = 0.09\nsamples = 26\nvalue = [0, 41, 2]\nclass = versicolor", fillcolor="#43e687"] ;
+2 -> 3 ;
+4 [label="sepal width (cm) <= 2.25\ngini = 0.05\nsamples = 25\nvalue = [0, 41, 1]\nclass = versicolor", fillcolor="#3ee684"] ;
+3 -> 4 ;
+5 [label="petal width (cm) <= 1.25\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1]\nclass = versicolor", fillcolor="#ffffff"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 23\nvalue = [0, 40, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+4 -> 8 ;
+9 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5"] ;
+3 -> 9 ;
+10 [label="petal length (cm) <= 4.85\ngini = 0.1\nsamples = 23\nvalue = [0, 2, 34]\nclass = virginica", fillcolor="#8845e7"] ;
+2 -> 10 ;
+11 [label="sepal length (cm) <= 5.95\ngini = 0.5\nsamples = 3\nvalue = [0, 2, 2]\nclass = versicolor", fillcolor="#ffffff"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 1\nvalue = [0, 2, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 2]\nclass = virginica", fillcolor="#8139e5"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 20\nvalue = [0, 0, 32]\nclass = virginica", fillcolor="#8139e5"] ;
+10 -> 14 ;
+}
